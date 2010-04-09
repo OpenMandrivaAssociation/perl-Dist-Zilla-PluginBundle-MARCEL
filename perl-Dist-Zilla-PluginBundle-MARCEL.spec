@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-PluginBundle-MARCEL
-%define upstream_version 1.100690
+%define upstream_version 1.100980
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -12,14 +12,12 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Class::MOP)
-BuildRequires: perl(Dist::Zilla::Plugin::AllFiles)
 BuildRequires: perl(Dist::Zilla::Plugin::AutoPrereq)
 BuildRequires: perl(Dist::Zilla::Plugin::AutoVersion)
 BuildRequires: perl(Dist::Zilla::Plugin::CheckChangeLog)
 BuildRequires: perl(Dist::Zilla::Plugin::CompileTests)
 BuildRequires: perl(Dist::Zilla::Plugin::CriticTests)
 BuildRequires: perl(Dist::Zilla::Plugin::ExtraTests)
-BuildRequires: perl(Dist::Zilla::Plugin::InstallDirs)
 BuildRequires: perl(Dist::Zilla::Plugin::License)
 BuildRequires: perl(Dist::Zilla::Plugin::MakeMaker)
 BuildRequires: perl(Dist::Zilla::Plugin::Manifest)
@@ -30,7 +28,6 @@ BuildRequires: perl(Dist::Zilla::Plugin::MetaTests)
 BuildRequires: perl(Dist::Zilla::Plugin::MetaYAML)
 BuildRequires: perl(Dist::Zilla::Plugin::NextRelease)
 BuildRequires: perl(Dist::Zilla::Plugin::PkgVersion)
-BuildRequires: perl(Dist::Zilla::Plugin::PodTests)
 BuildRequires: perl(Dist::Zilla::Plugin::PodWeaver)
 BuildRequires: perl(Dist::Zilla::Plugin::PruneCruft)
 BuildRequires: perl(Dist::Zilla::Plugin::ReadmeFromPod)
@@ -45,6 +42,7 @@ BuildRequires: perl(File::Temp)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Moose::Autobox)
 BuildRequires: perl(Test::More)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
