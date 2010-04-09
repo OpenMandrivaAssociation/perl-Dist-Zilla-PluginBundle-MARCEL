@@ -41,7 +41,7 @@ BuildRequires: perl(File::Find)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Moose::Autobox)
-BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::More) >= 0.940.0
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
